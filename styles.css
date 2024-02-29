@@ -1,0 +1,691 @@
+/* image links 
+
+logo: https://dyen.org/assets/images/png/logo.png
+first img: https://dyen.org/assets/images/png/Group377.png
+second img: https://dyen.org/assets/images/png/web-guys.jpg
+third img: https    ://dyen.org/assets/images/png/dyen-map.png
+
+
+*/
+
+/* header Styling */
+
+:root{
+    --yellow: #ffc200;
+    --whyte: #f7f8ff;
+    --black: #212525;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.poppins-light {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+body{
+    margin: 0;
+    background-color: white;
+}
+main{
+    margin: 0 5% 20px 5%;
+
+}
+
+header{
+    width: 90%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    margin: 0 5%;
+
+}
+
+div#logo{
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+nav{
+display: flex;
+justify-content: space-between;
+width: 80%;
+}
+
+nav>div{
+width: 35%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+
+}
+nav input{
+width: 100%;
+font-size: 1.1rem;
+border:none;
+border-radius: 20px;
+padding: 5px 0 5px 20px;
+}
+
+nav input:focus{
+    outline: 1px solid var(--yellow);
+}
+
+header ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    width: 65%;
+    font-size: 1.2rem;
+}
+header li:hover{
+    color: var(--yellow);
+    cursor: pointer;
+}
+
+/* section with Id of Main */
+
+section#main{
+    display: flex;
+    margin-top: 8%;
+    background-color: var(--whyte);
+}
+
+section#main > div{
+    width: 50%;
+}
+
+section#main #fmain{
+    display: flex;
+    flex-direction: column;
+}
+
+section#main div h1{
+    margin: 200px 0 20px 0;
+    font-size: 3.5rem;
+    width: 70%;
+    padding: 0 20px 0 5px ;
+}
+section#main div p{
+    width: 70%;
+    font-size: 1.2rem;
+    margin-left: 5px;
+    padding-left: 5px;
+}
+
+
+
+#btn-div{
+    display: flex;
+    margin: 5px;    
+}
+
+.btn{
+background-color : var(--yellow);
+width: 40%;
+font-size: 1.1rem;
+/* height: 100% */
+padding: 15px;
+margin: 0 5px 0 0;
+border-radius: 10px;
+border: none;
+cursor: pointer;
+}
+
+.btn-ii{
+    background-color: initial;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn span{
+    margin-left: 10px;
+}
+
+div#f-img{
+    width: 60%;
+    margin:0 40% 0 200px ;
+}
+
+div#f-img img{
+    width: 100%;
+}
+
+
+/* networking section */
+
+section#networking{
+color: #212529;
+}
+
+
+
+
+section#networking #net-one{
+    width: 60%;
+    margin: 0 auto;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+section#networking #net-one p{
+    text-align: justify;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+section#networking #net-two{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+
+}
+
+section#networking #net-two > div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 65%;
+    margin: 0 auto;
+    gap: 10px;
+}
+section#networking #net-two > div h5{
+    font-size: 1.2rem;
+margin-bottom: 0;
+}
+
+
+/* mission section  */
+section#mission{
+    display: flex; 
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-bottom: 50px;  
+}
+
+section#mission #Imission{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #212529;
+
+}
+
+section#mission ul{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    margin-right: 20px;
+    margin-top: 0;
+}
+
+section#mission ul li{
+    display: flex;
+    align-items: center;
+}
+
+section#mission ul img{
+   width: 22px;
+   height: 22px; 
+   margin-right: 5px;
+}
+
+section#mission h6{
+    color: #ffc200;
+    margin:0 40px 0 40px;
+}
+
+section#mission h3{
+    font-weight: 700;
+    font-size: 1.8rem;
+    line-height: 2;
+    margin: 0 20px 0 40px;
+}
+
+section#mission #image{
+    width: 45%;
+}
+
+#image img{
+    width: 100%;
+    border-radius: 20px;
+
+}
+
+section#mission button{
+    background-color : var(--yellow);
+    width: 40%;
+    font-size: 1.1rem;
+    /* height: 100% */
+    padding: 15px;
+    margin: 0 5px 0 0;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    }
+    
+
+    /* community section */
+    section#community{
+        display: flex;
+        justify-content: space-evenly;
+        margin-bottom: 50px;
+    }
+
+    section#community > div{
+        width: 48.5%;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    section#community img{
+        width: 100%;
+    }
+
+    section#community h6{
+        color: var(--yellow);
+        font-size: 1rem;
+    }
+    section#community h3{
+        font-size: 1.8rem;
+    }
+
+     section#community button{
+        background-color : var(--yellow);
+        width: 40%;
+        font-size: 1.1rem;
+        padding: 15px;
+        margin: 0 5px 0 0;
+        border-radius: 10px;
+        border: none;
+        cursor: pointer;
+        }
+     
+    section#video{
+        height: 35rem;
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* stats section */
+
+    aside#stats{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        /* background-color:hsla(195, 11%, 15%, 1); */
+        background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(https://dyen.org/assets/images/png/DSC_9989\ 1.png);
+        background-position: top;
+        background-size: cover;
+        height: 30rem;
+        position: relative;
+        bottom: 150px;
+        z-index: -1;
+        width: 100%;
+        
+    }
+
+    aside#stats > div{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    width: 60%;
+    margin-top: 50px;
+    }
+    
+    aside#stats h2{
+        color: var(--yellow);
+        font-size: 1.8rem;
+        padding-left: 5px;
+    }
+
+    aside#stats p{
+        color: white;
+        padding-left: 5px;
+    }
+
+    aside#reach-out{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 5%;
+    }
+
+    aside#reach-out h6{
+        color: var(--yellow);
+        text-align: center;
+        font-size: 1rem;
+    }
+
+    aside#reach-out h3{
+        font-size: 1.9rem;
+        text-align: center;
+    }
+
+    aside#reach-out #Animation{
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+    }
+
+    aside#reach-out #Animation div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        background-color: var(--whyte); 
+        color: var(--black); 
+        text-align: center; 
+        height: 30rem;
+        border-radius: 20px;
+
+    }
+
+
+    /* Reach-out*/
+
+    aside#reach-out #Animation img{
+        width: 95px;
+        height: 94px;
+    }
+
+    aside#reach-out button{
+        width: 40%;
+        font-size: 1.1rem;
+        padding: 15px;
+        margin: 0;
+        border-radius: 10px;
+        border: none;
+        cursor: pointer;
+        }
+
+        aside#reach-out button:hover{
+            background-color: var(--yellow);
+        }
+
+        aside#reach-out h5{
+            font-size: 1.4rem;
+            margin: 0;
+        }
+
+        aside#reach-out p{
+            width: 60%;
+            margin-top: 0;
+            line-height: 1.5;
+        }
+
+        footer{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background-color:  var(--whyte);
+            margin-top: 100px;
+            margin-bottom: 50px;
+        }
+
+        footer #Subscribe{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                background-color: black;
+                color: white;
+                height: 15rem;
+                margin: 100px 5%;
+                border-radius: 20px;
+
+        }
+
+        #Subscribe h1{
+            font-size: 2.32rem;
+            width: 40%;
+            text-wrap: wrap;
+        }
+
+        #Subscribe div{
+            display: flex;
+            flex-direction: row;
+            width: 50%;
+            height: 30%;
+            border: 1px solid white
+
+        }
+        #Subscribe input{
+            height: 90%;
+            width: 70%;
+            background-color: black;
+            border: none;
+            padding: 2px;
+            color: var(--whyte);
+        } 
+
+        #Subscribe input:focus{
+            outline: none;
+        }
+
+
+        #Subscribe button{
+        width: 30%;
+        font-size: 1.1rem;
+        background-color: var(--yellow);
+        padding: 15px;
+        margin: 3px;
+        border-radius: 10px;
+        border: none;
+        cursor: pointer;
+        }
+
+        footer hr{
+            width: 90%
+        }
+
+        small{
+            margin-left: 5%;
+        }
+
+        footer ul{
+            display: none;
+        }
+
+        @media screen and (max-width: 769px) {
+            nav{
+                display: none;
+            }
+            section#main{
+                flex-direction: column;
+                align-items: center;
+            }
+            section#main > div{
+                width: 100%;
+            }
+            div#f-img{
+                display: none;
+            }
+            div#fmain{
+                width: 100%;
+            } 
+
+            section#main div h1, section#main div p{
+                width: 100%;
+                text-align: center;
+            }
+/*             
+            section#main div h1{
+                font-size: 1.5em;
+            } */
+            
+            #btn-div{
+                display: flex;
+                justify-content: center;
+            }
+            section#networking #net-one{
+                width: 100%;
+            }
+            section#networking #net-two > div h5, section#networking #net-two > div p{
+                display: none;
+            }
+
+            
+            section#networking #net-two > div{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                width: 65%;
+                margin: 0 auto;
+                gap: 10px;
+            }
+
+            section#mission{
+                flex-direction: column;
+                align-items: center;
+            }
+            section#mission h6{
+                color: #ffc200;
+                text-align: center;
+                font-size: 1em;
+            }
+            
+            section#mission h3{
+                text-align: center;
+            }
+            
+            section#mission #image{
+                margin-top: 20px;
+                width: 90%;
+            }
+            section#community{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-top: 50px;
+                margin-bottom: 50px;
+            }
+           
+            section#community > div{
+                width: 90%;
+                display: flex;
+                text-align: center;
+            }
+            section#community button{
+                width: 30%;
+            }
+        
+            
+    aside#stats > div{
+        width: 80%;
+        }
+
+        aside#reach-out #Animation{
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+        }
+
+        footer #Subscribe{
+            flex-direction: column;
+        }
+
+
+        #Subscribe div, #Subscribe h1{
+            width: 95%;
+        }
+        #Subscribe h1{
+            text-align: center;
+        }
+
+
+        footer ul{
+            display: flex;
+            flex-direction: column;
+            list-style: none;
+            font-size: 1.2rem;
+            gap: 1.1rem;
+            padding: 20px;
+        }
+
+        footer #toggle{
+            display: none;
+        }
+        }
+
+     @media screen and (max-width: 400px) {
+        
+        main{
+            margin: 0 5% 20 5%;
+            width: 90%;
+        
+        }
+        
+        section#main div h1{
+                 font-size: 2.5rem ;
+                 width: 100%;
+                 text-align: center;
+             }
+             section#main div p{
+                padding: 5px;
+                margin-right: 3px;
+             }
+             aside#reach-out #Animation div{
+                width: 100%;
+            }
+    
+            aside#stats{
+                height: 30rem;
+                position: relative;
+                bottom: 100px;
+                right: 0;
+                z-index: -1;
+                width: 100%;
+                margin: 0;
+            }
+        
+
+            section#community button{
+                width: 50%;
+            }
+           
+        aside#stats > div{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            width: 70%;
+            margin-top: 150px;
+            margin-bottom: 60px;
+            column-gap: 2rem;
+        }
+
+        #Subscribe button{
+            font-size: 0.8rem;
+        }
+        
+        footer{
+            display: block;
+
+        }        
+
+     }      
+        
+     /* aside#reach-out{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 5%;
+    } */
